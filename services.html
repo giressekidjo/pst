@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services | Peoplestaff Technologies</title>
+  <meta name="description" content="Explore PST's IT services: Cloud Migration, IT Professional Consulting, and Staff Augmentation for government and commercial clients."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .services-detail-grid { display:grid; gap:40px; margin-top:48px; }
+    .service-detail-row {
+      display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;
+      padding:40px; background:var(--clr-off-white); border-radius:var(--radius-xl);
+      border:1px solid var(--clr-grey-100);
+    }
+    .service-detail-row.reverse { direction:rtl; }
+    .service-detail-row.reverse > * { direction:ltr; }
+    .service-detail-visual {
+      background:linear-gradient(135deg,var(--clr-navy) 0%,var(--clr-navy-mid) 100%);
+      border-radius:var(--radius-lg); padding:40px; min-height:260px;
+      display:flex; flex-direction:column; justify-content:center; gap:16px;
+    }
+    .service-detail-visual h3 { color:white; font-size:1.4rem; }
+    .service-detail-visual p  { color:rgba(255,255,255,0.65); font-size:0.9rem; }
+    .svc-icon-lg {
+      width:64px; height:64px; border-radius:var(--radius-md);
+      background:linear-gradient(135deg,var(--clr-green),var(--clr-green-dark));
+      display:flex; align-items:center; justify-content:center; margin-bottom:16px;
+    }
+    .svc-icon-lg svg { width:32px; height:32px; color:white; }
+    .service-detail-text h2 { margin-bottom:14px; }
+    .service-detail-text p  { margin-bottom:14px; }
+    .service-points { display:grid; gap:10px; margin-top:16px; }
+    .service-point { display:flex; align-items:flex-start; gap:10px; }
+    .service-point-dot {
+      width:20px; height:20px; border-radius:50%; background:var(--clr-green-glow);
+      display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;
+    }
+    .service-point-dot::after { content:''; width:7px; height:7px; border-radius:50%; background:var(--clr-green); display:block; }
+    .service-point span { font-size:0.9rem; color:var(--clr-text-muted); }
+    @media(max-width:768px){
+      .service-detail-row { grid-template-columns:1fr; direction:ltr; }
+      .service-detail-row.reverse { direction:ltr; }
+    }
+  </style>
+</head>
+<body>
+<header id="header">
+  <div class="container"><div class="header-inner">
+    <a href="index.html" class="logo"><div class="logo-mark">PST</div><div class="logo-text"><span>Peoplestaff</span><span>Technologies</span></div></a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="expertise.html">Expertise</a>
+      <a href="services.html" class="active">Services</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="nav-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (240) 683-9573</span>
+      <a href="contact.html" class="btn btn-primary">Get in Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div></div>
+</header>
+<nav class="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About Us</a><a href="expertise.html">Expertise</a>
+  <a href="services.html" class="active">Services</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+</nav>
+<div class="page-content">
+
+<section class="page-hero">
+  <div class="container"><div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Services</span></div>
+    <h1>Our Services</h1>
+    <p style="color:rgba(255,255,255,0.65);margin-top:10px;max-width:520px;">Full-spectrum IT solutions — from cloud architecture to on-demand tech talent — designed to drive measurable results.</p>
+  </div></div>
+</section>
+
+<!-- Service detail sections -->
+<section class="section">
+  <div class="container">
+    <div class="section-header centered fade-up">
+      <div class="badge">What We Offer</div>
+      <h2>Everything Your IT Needs,<br/>Under One Roof</h2>
+      <p>Three flagship service lines crafted to support organizations at every stage of their technology journey.</p>
+    </div>
+
+    <div class="services-detail-grid">
+      <!-- Cloud Services -->
+      <div class="service-detail-row fade-up">
+        <div class="service-detail-visual">
+          <div class="svc-icon-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg></div>
+          <h3>Cloud Services</h3>
+          <p>Modern cloud infrastructure built for resilience, security, and scale.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;">
+            <span class="pill">AWS</span><span class="pill">Azure</span><span class="pill">GCP</span><span class="pill">Hybrid Cloud</span>
+          </div>
+        </div>
+        <div class="service-detail-text">
+          <div class="badge">Technology</div>
+          <h2>Cloud Services</h2>
+          <p>We design, migrate, and manage cloud environments that reduce cost, improve resilience, and accelerate your team's velocity. Our certified architects handle every phase — from discovery to post-launch optimization.</p>
+          <div class="service-points">
+            <div class="service-point"><div class="service-point-dot"></div><span>Cloud strategy and roadmap development</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Infrastructure migration (on-prem to cloud)</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Multi-cloud and hybrid cloud architecture</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Cloud cost optimization and FinOps</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Managed cloud operations & monitoring</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Start Cloud Journey <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <!-- IT Consulting -->
+      <div class="service-detail-row reverse fade-up delay-1">
+        <div class="service-detail-visual" style="background:linear-gradient(135deg,#1D3B6B,#253D6E)">
+          <div class="svc-icon-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg></div>
+          <h3>IT Professional Consulting</h3>
+          <p>Strategic guidance that transforms IT from a cost center to a competitive advantage.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;">
+            <span class="pill">Strategy</span><span class="pill">Architecture</span><span class="pill">SAP</span>
+          </div>
+        </div>
+        <div class="service-detail-text">
+          <div class="badge">Technology</div>
+          <h2>IT Professional Consulting</h2>
+          <p>Our senior consultants embed with your leadership team to build technology strategies that are grounded in your business reality. We translate complex technical challenges into clear, actionable roadmaps.</p>
+          <div class="service-points">
+            <div class="service-point"><div class="service-point-dot"></div><span>IT strategy and digital transformation planning</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Enterprise architecture & systems design</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>SAP implementation and integration</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Cybersecurity assessment and governance</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Vendor selection and procurement advisory</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Talk to a Consultant <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Staff Augmentation -->
+      <div class="service-detail-row fade-up delay-2">
+        <div class="service-detail-visual" style="background:linear-gradient(135deg,#0F1E3C,#1A2E5A)">
+          <div class="svc-icon-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <h3>IT Staff Augmentation</h3>
+          <p>Skilled professionals who integrate into your team on day one, seamlessly.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;">
+            <span class="pill">DevOps</span><span class="pill">Cloud Eng.</span><span class="pill">Full-Stack</span><span class="pill">Data</span>
+          </div>
+        </div>
+        <div class="service-detail-text">
+          <div class="badge">Outsourcing</div>
+          <h2>IT Staff Augmentation</h2>
+          <p>We source, vet, and place top-tier technology professionals that become a natural extension of your team. Whether you need one engineer or an entire pod, we deliver talent fast — without the overhead.</p>
+          <div class="service-points">
+            <div class="service-point"><div class="service-point-dot"></div><span>Software engineers (front-end, back-end, full-stack)</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Cloud and infrastructure engineers</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>DevOps and SRE professionals</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Data analysts and Splunk specialists</span></div>
+            <div class="service-point"><div class="service-point-dot"></div><span>Network and security engineers</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Find Talent <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container"><div class="cta-inner">
+    <div><h2>Not Sure Which Service You Need?</h2><p>Our experts will assess your situation and recommend the best-fit solution, free of charge.</p></div>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary">Schedule a Free Consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div></div>
+</section>
+
+</div>
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><div class="logo-mark">PST</div><div class="logo-text"><span>Peoplestaff</span><span>Technologies</span></div></a>
+        <p>Maryland-based minority-owned IT firm delivering cloud, consulting, and talent solutions since 2018.</p>
+        <div class="footer-socials"><a href="#" class="social-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="#" class="social-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></div>
+      </div>
+      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="expertise.html">Expertise</a></li><li><a href="services.html">Services</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">Cloud Services</a></li><li><a href="services.html">IT Consulting</a></li><li><a href="services.html">Staff Augmentation</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5>
+        <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span>+1 (240) 683-9573</span></div>
+        <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>info@peoplestaff-technologies.com</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Peoplestaff Technologies. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+  </div>
+</footer>
+<button id="back-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+<script src="js/main.js"></script>
+</body>
+</html>
